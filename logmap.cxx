@@ -3,27 +3,29 @@
  Lab 2
  28.10.2015
  */
- #include <iostream>,
- using namespace std;
- int main(){
-	int x;
-	int i;
-	float j,M;
-	int N;
-	float r;
-	M = 4;
-	N = 100;
-	for ( i = 0; i < N; i++);
-	{
-	  for ( j=0,5 ; j< M; j++);
-	{  
-	  r=j;
-	  x = r*x*(1 - x);
+ // Lab2 28.10.2015
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
 	
+  
+	for(double r=0; r <= 4; r += 0.1){
+	   
+	  double x=0.5;
+	  
+	   for(int i=1; i < 100; i++){
+		   x = r*x*(1-x);
+		   
+	  cout << r << "\t" << x << endl;
+   	   }
 	}
-	cout << " x =" << x << ", i =" << i << ", j =" << j <<endl;
-        }
-	
+
+
 	return 0;
+}
+
 
 }
